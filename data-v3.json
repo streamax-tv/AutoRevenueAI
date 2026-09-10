@@ -1,0 +1,205 @@
+{
+  "dealerships": [
+    {
+      "id": "d1",
+      "name": "Atlas Cars",
+      "city": "Casablanca",
+      "phone": "+212600000000",
+      "plan": "Growth",
+      "createdAt": "2026-09-10T15:29:11.917Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "u1",
+      "dealershipId": "d1",
+      "name": "Admin",
+      "email": "admin@atlas-cars.ma",
+      "passwordHash": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "owner"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "car1",
+      "dealershipId": "d1",
+      "make": "Mercedes-Benz",
+      "model": "GLC 300",
+      "year": 2023,
+      "km": 32400,
+      "fuel": "Hybrid",
+      "price": 56900,
+      "status": "Available",
+      "stock": "AT-GLC-23",
+      "description": "AMG Line, full options, excellent condition"
+    },
+    {
+      "id": "car2",
+      "dealershipId": "d1",
+      "make": "BMW",
+      "model": "320d M Sport",
+      "year": 2022,
+      "km": 48120,
+      "fuel": "Diesel",
+      "price": 38900,
+      "status": "Available",
+      "stock": "AT-BMW-22",
+      "description": "M Sport, automatic, clean history"
+    },
+    {
+      "id": "car3",
+      "dealershipId": "d1",
+      "make": "Audi",
+      "model": "Q5 S line",
+      "year": 2023,
+      "km": 27850,
+      "fuel": "Diesel",
+      "price": 47900,
+      "status": "Reserved",
+      "stock": "AT-Q5-23",
+      "description": "S line, quattro, premium interior"
+    },
+    {
+      "id": "car4",
+      "dealershipId": "d1",
+      "make": "Mercedes-Benz",
+      "model": "CLA 220d",
+      "year": 2023,
+      "km": 41770,
+      "fuel": "Diesel",
+      "price": 34900,
+      "status": "Available",
+      "stock": "AT-CLA-23",
+      "description": "AMG Line, automatic, low consumption"
+    }
+  ],
+  "leads": [
+    {
+      "id": "l1",
+      "dealershipId": "d1",
+      "name": "Youssef El Amrani",
+      "phone": "+212611111111",
+      "channel": "WhatsApp",
+      "vehicleId": "car4",
+      "status": "Qualified",
+      "score": "HOT",
+      "budget": 36000,
+      "finance": false,
+      "timeline": "This week",
+      "tradeIn": false,
+      "lastMessage": "Can I see the CLA tomorrow?",
+      "createdAt": "2026-09-10T15:21:11.918Z",
+      "updatedAt": "2026-09-10T15:21:11.918Z"
+    },
+    {
+      "id": "l2",
+      "dealershipId": "d1",
+      "name": "Sarah Benali",
+      "phone": "+212622222222",
+      "channel": "Instagram",
+      "vehicleId": "car2",
+      "status": "Appointment",
+      "score": "HOT",
+      "budget": 40000,
+      "finance": true,
+      "timeline": "This week",
+      "tradeIn": true,
+      "lastMessage": "Saturday 11 works for me",
+      "createdAt": "2026-09-10T15:08:11.918Z",
+      "updatedAt": "2026-09-10T15:08:11.918Z"
+    },
+    {
+      "id": "l3",
+      "dealershipId": "d1",
+      "name": "Mehdi Alaoui",
+      "phone": "+212633333333",
+      "channel": "Website",
+      "vehicleId": "car1",
+      "status": "New",
+      "score": "WARM",
+      "budget": 57000,
+      "finance": false,
+      "timeline": "This month",
+      "tradeIn": false,
+      "lastMessage": "Is it still available?",
+      "createdAt": "2026-09-10T14:47:11.918Z",
+      "updatedAt": "2026-09-10T14:47:11.918Z"
+    },
+    {
+      "id": "l4",
+      "dealershipId": "d1",
+      "name": "Nadia Idrissi",
+      "phone": "+212644444444",
+      "channel": "Facebook",
+      "vehicleId": "car3",
+      "status": "New",
+      "score": "COLD",
+      "budget": 45000,
+      "finance": false,
+      "timeline": "Unknown",
+      "tradeIn": false,
+      "lastMessage": "I will think about it",
+      "createdAt": "2026-09-10T14:29:11.918Z",
+      "updatedAt": "2026-09-10T14:29:11.918Z"
+    }
+  ],
+  "messages": [],
+  "appointments": [
+    {
+      "id": "a1",
+      "dealershipId": "d1",
+      "leadId": "l2",
+      "vehicleId": "car2",
+      "start": "2026-09-12T11:00:00+01:00",
+      "status": "Booked",
+      "notes": "Customer requested test drive"
+    },
+    {
+      "id": "a2",
+      "dealershipId": "d1",
+      "leadId": "l1",
+      "vehicleId": "car4",
+      "start": "2026-09-10T17:30:00+01:00",
+      "status": "Booked",
+      "notes": "Confirm 2h before"
+    },
+    {
+      "id": "a3",
+      "dealershipId": "d1",
+      "leadId": "l3",
+      "vehicleId": "car1",
+      "start": "2026-09-13T10:00:00+01:00",
+      "status": "Tentative",
+      "notes": ""
+    }
+  ],
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 99,
+      "limit": 100
+    },
+    {
+      "id": "growth",
+      "name": "Growth",
+      "price": 249,
+      "limit": 500
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 499,
+      "limit": 2000
+    }
+  ],
+  "settings": [
+    {
+      "dealershipId": "d1",
+      "businessHours": "09:00-19:00",
+      "timezone": "Africa/Casablanca",
+      "language": "fr",
+      "systemPrompt": "You are a helpful automotive sales assistant. Never invent stock, price or appointment availability."
+    }
+  ]
+}
