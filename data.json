@@ -1,0 +1,125 @@
+{
+  "dealership": {
+    "id": "atlas-cars",
+    "name": "Atlas Cars",
+    "city": "Casablanca",
+    "currency": "EUR"
+  },
+  "leads": [
+    {
+      "id": "L-1001",
+      "name": "Youssef El Amrani",
+      "vehicle": "Mercedes CLA 220d",
+      "score": "HOT",
+      "stage": "Qualified",
+      "source": "WhatsApp",
+      "lastContact": "8 min ago"
+    },
+    {
+      "id": "L-1002",
+      "name": "Sarah Benali",
+      "vehicle": "BMW 320d M Sport",
+      "score": "HOT",
+      "stage": "Appointment",
+      "source": "Instagram",
+      "lastContact": "21 min ago"
+    },
+    {
+      "id": "L-1003",
+      "name": "Mehdi Alaoui",
+      "vehicle": "Mercedes GLC 300",
+      "score": "WARM",
+      "stage": "New",
+      "source": "Website",
+      "lastContact": "42 min ago"
+    },
+    {
+      "id": "L-1004",
+      "name": "Nadia Idrissi",
+      "vehicle": "Audi Q5 S line",
+      "score": "COLD",
+      "stage": "New",
+      "source": "Facebook",
+      "lastContact": "1h ago"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "V-001",
+      "make": "Mercedes-Benz",
+      "model": "GLC 300",
+      "year": 2023,
+      "km": 32400,
+      "fuel": "Hybrid",
+      "price": 56900,
+      "status": "Available"
+    },
+    {
+      "id": "V-002",
+      "make": "BMW",
+      "model": "320d M Sport",
+      "year": 2022,
+      "km": 48120,
+      "fuel": "Diesel",
+      "price": 38900,
+      "status": "Available"
+    },
+    {
+      "id": "V-003",
+      "make": "Audi",
+      "model": "Q5 S line",
+      "year": 2023,
+      "km": 27850,
+      "fuel": "Diesel",
+      "price": 47900,
+      "status": "Reserved"
+    },
+    {
+      "id": "V-004",
+      "make": "Mercedes",
+      "model": "CLA 220d",
+      "year": 2023,
+      "km": 41770,
+      "fuel": "Diesel",
+      "price": 34900,
+      "status": "Available"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "A-001",
+      "when": "Today, 10:30",
+      "name": "Sarah Benali",
+      "vehicle": "BMW 320d M Sport",
+      "status": "Confirmed"
+    },
+    {
+      "id": "A-002",
+      "when": "Today, 14:00",
+      "name": "Omar Tazi",
+      "vehicle": "Mercedes GLC 300",
+      "status": "Confirmed"
+    },
+    {
+      "id": "A-003",
+      "when": "Tomorrow, 11:15",
+      "name": "Imane Chraibi",
+      "vehicle": "Mercedes CLA 220d",
+      "status": "Confirmed"
+    },
+    {
+      "id": "A-004",
+      "when": "Tomorrow, 16:30",
+      "name": "Rachid Fassi",
+      "vehicle": "Audi Q5 S line",
+      "status": "Confirmed"
+    }
+  ],
+  "metrics": {
+    "newLeads": 148,
+    "qualified": 64,
+    "appointments": 31,
+    "revenue": 186400,
+    "revenueLeaks": 42800
+  }
+}
