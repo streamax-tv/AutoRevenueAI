@@ -1,0 +1,1 @@
+Security hardening in progress: password scrypt migration, rate limiting, request-size validation, security headers, and PostgreSQL connectivity health checks.
